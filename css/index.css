@@ -1,1 +1,318 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+}
+.links {
+  text-decoration: none;
+  color: black;
+}
+.spacing {
+  margin-top: 3%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-header {
+  font-size: 1.8rem;
+}
+.lists {
+  margin-top: 5%;
+  font-size: 1.4rem;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 950px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 2%;
+  display: flex;
+  flex-direction: column;
+}
+.container .nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-end;
+}
+.container .nav a {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+.container .intro {
+  line-height: normal;
+  margin-top: 3%;
+  width: 100%;
+  background: #e9ecef;
+  height: 650px;
+  padding: 20px 2%;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+}
+.container .intro .profile {
+  margin-top: 3%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  width: 30%;
+}
+.container .intro .lead {
+  margin-top: 2%;
+  font-size: 2.5rem;
+}
+.container .intro .sub-lead {
+  margin-top: 1%;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.container .intro .about p {
+  margin-top: 3%;
+  font-size: 1.2rem;
+}
+.container .intro .about button {
+  margin-top: 3%;
+  font-size: 1.3rem;
+  background: lightgray;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  width: 20%;
+  height: 50px;
+}
+.container .middle-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  line-height: normal;
+  margin-top: 3%;
+  width: 100%;
+  background: #e9ecef;
+  color: black;
+  height: 600px;
+  padding: 20px 2%;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+}
+.container .middle-content h3 {
+  font-size: 1.8rem;
+}
+.container .middle-content div {
+  width: 40%;
+}
+.container .middle-content div p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 3%;
+}
+.container .middle-content div li {
+  margin-top: 5%;
+  font-size: 1.4rem;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.container .work {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: normal;
+  margin-top: 3%;
+  width: 100%;
+  background: #e9ecef;
+  color: black;
+  height: 400px;
+  padding: 20px 2%;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+}
+.container .work h3 {
+  font-size: 1.8rem;
+}
+.container .work .work-boxes {
+  margin-top: 3%;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .work .work-boxes div {
+  background-color: lightgray;
+  color: black;
+  height: 50%;
+  width: 45%;
+  padding: 20px 2%;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+}
+.container .work .work-boxes div h4 {
+  font-size: 1.3rem;
+}
+.container .work .work-boxes div p {
+  margin-top: 3%;
+}
+.container .work .work-boxes div li {
+  margin-top: 5%;
+  font-size: 1.4rem;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.container .bottom-section {
+  background: black;
+  color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+}
+.container .bottom-section .contact {
+  width: 100%;
+  text-align: center;
+}
+.container .bottom-section .contact p {
+  margin-top: 1%;
+}
+.container .bottom-section .copyright {
+  margin-top: 3%;
+  color: white;
+  text-align: center;
+}
