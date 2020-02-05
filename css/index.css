@@ -153,11 +153,11 @@ body {
 .container {
   font-family: 'EB Garamond', serif;
   max-width: 960px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px 2%;
   margin: 0 auto;
+  margin-bottom: 5%;
 }
 .container hr {
   margin-top: 3%;
@@ -206,7 +206,7 @@ body {
   -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
   box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
   display: flex;
-  height: 100vh;
+  height: 100%;
 }
 .container .content h2 {
   text-transform: uppercase;
@@ -215,6 +215,8 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   color: #36373c;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .container .content .left {
   padding: 20px 2%;
@@ -225,17 +227,36 @@ body {
 .container .content .left ul {
   margin-top: 5%;
   width: 100%;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+}
+.container .content .left ul p {
+  font-weight: 600;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .container .content .left ul li {
   margin-top: 3%;
   margin-bottom: 3%;
   color: #36373c;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
-.container .content .left ul li p {
+.container .content .left .education-container {
   margin-top: 3%;
-  margin-bottom: 3%;
+  line-height: 1.5;
+}
+.container .content .left .education-container h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.container .content .left .education-container p {
+  color: darkgray;
+}
+.container .content .left .skills li {
+  font-size: 1.2rem;
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 .container .content .right {
   padding: 20px 2%;
