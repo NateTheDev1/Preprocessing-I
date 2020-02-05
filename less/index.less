@@ -235,8 +235,7 @@ body {
 			font-size: 1.5rem;
 			font-weight: 600;
 			color: rgb(54, 55, 60);
-			margin-top: 5%;
-			margin-bottom: 5%;
+
 		}
 
 		.left {
@@ -291,8 +290,37 @@ body {
 		.right {
 			padding: @default-padding;
 			width: 60%;
-			background: ghostwhite;
+			background: white;
 			height: 100%;
+			display: flex;
+			flex-direction: column;
+
+			.about {
+				p {
+					font-size: 1.2rem;
+					line-height: 2;
+				}
+			}
+
+			.work {
+				margin-top: 5%;
+				font-size: 1.2rem;
+				line-height: 2;
+
+				.work-container {
+
+					margin-top: 5%;
+
+					h3 {
+						font-weight: 600;
+						font-size: 1.3rem;
+					}
+
+					p {
+						color: darkgray;
+					}
+				}
+			}
 		}
 	}
 }
