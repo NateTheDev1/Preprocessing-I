@@ -135,184 +135,95 @@ body {
   height: 100%;
   font-size: 100%;
 }
-.links {
-  text-decoration: none;
-  color: black;
+.font {
+  font-family: 'EB Garamond', serif;
 }
-.spacing {
+.spacing-small {
   margin-top: 3%;
-}
-.flex {
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 3%;
 }
 .sub-header {
-  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.lists {
-  margin-top: 5%;
-  font-size: 1.4rem;
-  display: list-item;
-  list-style-type: disc;
-  list-style-position: inside;
+.links {
+  text-decoration: none;
+  color: white;
 }
 .container {
-  font-family: 'Roboto', sans-serif;
-  max-width: 950px;
+  font-family: 'EB Garamond', serif;
+  max-width: 960px;
   height: 100%;
-  margin: 0 auto;
-  padding: 20px 2%;
   display: flex;
   flex-direction: column;
-}
-.container .nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  justify-content: flex-end;
-}
-.container .nav a {
-  font-size: 1.2rem;
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-}
-.container .intro {
-  line-height: normal;
-  margin-top: 3%;
-  width: 100%;
-  background: #e9ecef;
-  height: 650px;
   padding: 20px 2%;
-  border: 1px solid #e9ecef;
-  border-radius: 10px;
+  margin: 0 auto;
 }
-.container .intro .profile {
+.container hr {
   margin-top: 3%;
-  border: 2px solid gray;
-  border-radius: 10px;
-  width: 30%;
+  margin-bottom: 3%;
 }
-.container .intro .lead {
-  margin-top: 2%;
+.container header {
+  margin-bottom: 3%;
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
+  width: 100%;
+  padding: 20px 2%;
+  color: white;
+  background: #36373c;
+}
+.container header h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-size: 2.5rem;
 }
-.container .intro .sub-lead {
-  margin-top: 1%;
+.container header h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-size: 1.5rem;
-  font-style: italic;
 }
-.container .intro .about p {
-  margin-top: 3%;
-  font-size: 1.2rem;
-}
-.container .intro .about button {
-  margin-top: 3%;
-  font-size: 1.3rem;
-  background: lightgray;
-  color: black;
-  border-radius: 5px;
-  border: none;
-  width: 20%;
-  height: 50px;
-}
-.container .middle-content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  line-height: normal;
-  margin-top: 3%;
-  width: 100%;
-  background: #e9ecef;
-  color: black;
-  height: 600px;
-  padding: 20px 2%;
-  border: 1px solid #e9ecef;
-  border-radius: 10px;
-}
-.container .middle-content h3 {
-  font-size: 1.8rem;
-}
-.container .middle-content div {
+.container header nav {
   width: 40%;
-}
-.container .middle-content div p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin-top: 3%;
-}
-.container .middle-content div li {
-  margin-top: 5%;
-  font-size: 1.4rem;
-  display: list-item;
-  list-style-type: disc;
-  list-style-position: inside;
-}
-.container .work {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  line-height: normal;
-  margin-top: 3%;
-  width: 100%;
-  background: #e9ecef;
-  color: black;
-  height: 400px;
-  padding: 20px 2%;
-  border: 1px solid #e9ecef;
-  border-radius: 10px;
-}
-.container .work h3 {
-  font-size: 1.8rem;
-}
-.container .work .work-boxes {
-  margin-top: 3%;
-  height: 900px;
+  margin-top: 6%;
   display: flex;
   justify-content: space-between;
 }
-.container .work .work-boxes div {
-  background-color: lightgray;
-  color: black;
-  height: 50%;
-  width: 45%;
-  padding: 20px 2%;
-  border: 1px solid #e9ecef;
-  border-radius: 10px;
-}
-.container .work .work-boxes div h4 {
+.container header nav a {
   font-size: 1.3rem;
-}
-.container .work .work-boxes div p {
-  margin-top: 3%;
-}
-.container .work .work-boxes div li {
-  margin-top: 5%;
-  font-size: 1.4rem;
-  display: list-item;
-  list-style-type: disc;
-  list-style-position: inside;
-}
-.container .bottom-section {
-  background: black;
+  text-decoration: none;
   color: white;
-  border: 1px solid #e9ecef;
-  border-radius: 10px;
-  margin-top: 3%;
+  color: gray;
+}
+.container header nav .active {
+  color: lightgray;
+}
+.container .content {
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
+  box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.76);
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 500px;
+  height: 100vh;
 }
-.container .bottom-section .contact {
-  width: 100%;
-  text-align: center;
+.container .content h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #36373c;
 }
-.container .bottom-section .contact p {
-  margin-top: 1%;
+.container .content .left {
+  padding: 20px 2%;
+  width: 40%;
+  background: #e7f0ef;
+  height: 100%;
 }
-.container .bottom-section .copyright {
-  margin-top: 3%;
-  color: white;
-  text-align: center;
+.container .content .right {
+  padding: 20px 2%;
+  width: 60%;
+  background: ghostwhite;
+  height: 100%;
 }
