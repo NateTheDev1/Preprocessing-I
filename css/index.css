@@ -159,6 +159,11 @@ body {
   margin: 0 auto;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .container {
+    margin-bottom: 2%;
+  }
+}
 .container hr {
   margin-top: 3%;
   margin-bottom: 3%;
@@ -181,6 +186,11 @@ body {
   letter-spacing: 2px;
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .container header h1 {
+    font-size: 2rem;
+  }
+}
 .container header h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -191,6 +201,11 @@ body {
   margin-top: 6%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container header nav {
+    width: 60%;
+  }
 }
 .container header nav a {
   font-size: 1.3rem;
@@ -208,6 +223,11 @@ body {
   display: flex;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .container .content {
+    flex-direction: column-reverse;
+  }
+}
 .container .content h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -220,7 +240,11 @@ body {
   padding: 20px 2%;
   width: 40%;
   background: #e7f0ef;
-  height: 100%;
+}
+@media (max-width: 500px) {
+  .container .content .left {
+    width: 100%;
+  }
 }
 .container .content .left ul {
   margin-top: 5%;
@@ -263,6 +287,11 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .container .content .right {
+    width: 100%;
+  }
 }
 .container .content .right .about p {
   font-size: 1.2rem;
