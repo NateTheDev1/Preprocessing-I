@@ -1,12 +1,14 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
-  <title>My Resume</title>
-
+  <script src="https://kit.fontawesome.com/04cecfb6fa.js" crossorigin="anonymous"></script>
+  <title>Nathaniel Richards</title>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet/less" type="text/css" href="./less/index.less" />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,93 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <h1>Nathaniel Richards</h1>
+      <hr />
+      <h2>Fullstack Web Developer</h2>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Portfolio</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section class="left">
+        <h2>Contact</h2>
+        <ul>
+          <li><i class="fas fa-phone"></i></li>
+          <p>231.215.4678</p>
+          <li><i class="fas fa-envelope"></i></li>
+          <p>nathaniel.richards@muskegoncc.edu</p>
+          <li><i class="fas fa-home"></i></li>
+          <p>Muskegon, Michigan</p>
+          <li><i class="fab fa-github"></i></li>
+          <p><a href='https://github.com/NateTheDev1' target="_blank">Github</a></p>
+          <p><a href='https://nathanielrichards.dev' target="_blank">Portfolio</a></p>
+        </ul>
+        <hr />
+        <h2>Education</h2>
+        <div class="education-container">
+          <h3>Fullstack Web Development</h3>
+          <p>Lambda School</p>
+          <p>2019 - Current</p>
+        </div>
+        <br>
+        <div class="education-container">
+          <h3>Software Development</h3>
+          <p>Muskegon Community College</p>
+          <p>2019 - 2020</p>
+        </div>
+        <hr />
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML | CSS | JS | LESS</li>
+            <li>React | JSX</li>
+            <li>NodeJS | Express</li>
+            <li>MongoDB | PouchDB | Firebase</li>
+            <li>Team Management</li>
+            <li>SCRUM Management</li>
+            <li>Problem Solving</li>
+            <li>Quick Learner</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="right">
+        <div class="about">
+        <h2>About</h2>
+        <hr />
+        <p>
+          I am more than a web developer.
+
+          I am an engineer that is passionate about designing, developing, and shipping production quality technology. I
+          strive to bring ideas to life, let me work with you and let's see what we can make!
+
+          I am based out of Muskegon, Michigan and yes, it's cold. I have been programming and designing games, apps,
+          and programs since I was 14 and have a strong passion to create high quality applications.
+        </p>
+      </div>
+      <div class="work">
+        <h2>Work Experience</h2>
+        <hr />
+        <div class="work-container">
+          <h3>Meijer - Grocery</h3>
+          <p>Team Management</p>
+          <p>2019 - Current</p>
+        </div>
+        <div class="work-container">
+          <h3>YakimaPC | Computer Repair</h3>
+          <p>Problem Solving</p>
+          <p>2017 - 2018</p>
+        </div>
+      </div>
+      </section>
+    </div>
+  </div>
 </body>
+
 </html>
